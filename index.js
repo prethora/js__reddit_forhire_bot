@@ -1,6 +1,12 @@
-import fetch from "node-fetch";
-(async () => {
-    const response = await fetch("https://www.google.com");
-    const body = await response.text();
-    console.log(body.length);
-})();
+// import fetch from "node-fetch";
+import express from "express";
+
+const port = process.env.PORT || 3000;
+
+const app = express();
+
+app.get("/",(req,res) => {
+    res.send("ok");
+});
+
+app.listen(port,() => console.log(`listening on port ${port}`));
