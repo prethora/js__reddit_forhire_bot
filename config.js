@@ -21,3 +21,5 @@ export const telegramConfig = {
 };
 
 export const httpGetPath = "/uydsfusd7ds7fsydd2y828e";
+
+export const useOldReddit = true;
