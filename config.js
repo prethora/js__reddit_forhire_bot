@@ -1,5 +1,5 @@
 export const reddits = {
-    "forhire": {flair: "Hiring"},
+    "forhire": {flair: ["Hiring","Hiring - Open"]},
     "hiring": {title: "Hiring"},
     "Jobs4Bitcoins": {title: "Hiring"},
 };
