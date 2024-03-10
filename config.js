@@ -5,8 +5,8 @@ export const reddits = {
 };
 
 export const redisUrls = {
-    internal: "redis://red-cngrn1da73kc73c8lcug:6379",
-    external: "rediss://red-cngrn1da73kc73c8lcug:Kq46fxGsxPOnVlPFWGKIQPzQOH3JyvUn@oregon-redis.render.com:6379"
+    internal: process.env.REDIS_URL_INTERNAL,
+    external: process.env.REDIS_URL_EXTERNAL
 };
 
 export const getRedisUrl = () => {
@@ -16,10 +16,10 @@ export const getRedisUrl = () => {
 export const maxInRedisStore = 100;
 
 export const telegramConfig = {
-    token: "7081544825:AAFeeurelIuQyngetPSVfpcm3SghNYFil60",
-    chatId: "712317256",
+    token: process.env.TELEGRAM_BOT_TOKEN,
+    chatId: process.env.TELEGRAM_BOT_CHAT_ID,
 };
 
-export const httpGetPath = "/uydsfusd7ds7fsydd2y828e";
+export const httpGetPath = process.env.HTTP_GET_PATH;
 
 export const useOldReddit = true;
